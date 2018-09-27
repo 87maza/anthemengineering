@@ -6,11 +6,14 @@ Install the angular/CLI before running npm start!
 
 How to run:
 
-Git clone the repo
+# Git clone the repo
+
 `git clone https://github.com/87maza/anthemengineering.git`
-Install the ANGULAR/CLI
+
+# Install the ANGULAR/CLI
 `npm install -g @angular/cli`
-Install dependencies
+
+# Install dependencies
 `npm start`
 
 ## Development server
