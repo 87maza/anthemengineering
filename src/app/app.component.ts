@@ -39,8 +39,19 @@ export class AppComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-  roundAbv(num: string) {
-    return parseFloat(num).toFixed(2);
+  roundAbv(abv: string) {
+    return parseFloat(abv).toFixed(2);
+  }
+
+  fakeParse(abv: string) {
+    if (abv.includes('.')) {
+      if (abv.split('.')[1].length > 2) {
+        const abvSplit = abv.split('.');
+        abvSplit[1] = abvSplit[1].slice(0, 2);
+        return abvSplit.join('.');
+      }
+    }
+    return abv;
   }
 
   openBreweryDialog(beer: Beer): void {

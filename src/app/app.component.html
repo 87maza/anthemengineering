@@ -26,7 +26,8 @@
     <!-- Progress Column -->
     <ng-container matColumnDef="abv">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> ABV % </th>
-      <td mat-cell *matCellDef="let row"> {{roundAbv(row.abv)}}% </td>
+      <!--<td mat-cell *matCellDef="let row"> {{roundAbv(row.abv)}}% </td>-->
+      <td mat-cell *matCellDef="let row"> {{fakeParse(row.abv)}}% </td>
     </ng-container>
 
     <!-- Category Name Column -->
