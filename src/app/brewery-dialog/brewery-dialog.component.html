@@ -1,0 +1,16 @@
+<div class="beer-sorter-header">
+  <div class="beer-sorter-header-title-logo">
+    <img src="../../assets/anthem.png" class="anthem-logo" alt="">
+    <h2>Anthem Engineering's Brewery Info</h2>
+  </div>
+</div>
+<div class="brewery-data-container">
+  <div class="brewery-data-contents" *ngFor="let brewery of breweryData">
+    <p>Name: {{brewery.name}}</p>
+    <p>Website: {{brewery.website}}</p>
+    <p>Address: {{brewery.address1}} {{brewery.city}}, {{brewery.state}} {{brewery.code}}</p>
+    <p>Country: {{brewery.country}}</p>
+    <p>Phone: {{brewery.phone}}</p>
+    <p>Description: {{brewery.descript}}</p>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.beer-sorter-header-title-logo {
+  display: flex;
+  padding-left: 28%;
+  padding-right: 28%;
+}
+.beer-sorter-header-title-logo> img {
+  width: 80px;
+  height: 80px;
+}
